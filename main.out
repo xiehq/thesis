@@ -1,0 +1,68 @@
+\BOOKMARK [-1][]{ctitle.-1}{SUNIST 等离子体电子温度与 密度的原子发射光谱诊断 }{}% 1
+\BOOKMARK [0][]{thuchapter.1.0}{摘 要}{ctitle.-1}% 2
+\BOOKMARK [0][]{thuchapter.2.0}{Abstract}{ctitle.-1}% 3
+\BOOKMARK [0][]{thuchapter.3.0}{目 录}{ctitle.-1}% 4
+\BOOKMARK [0][]{chapter.1}{第 1 章 引言}{ctitle.-1}% 5
+\BOOKMARK [1][-]{section.1.1}{1.1 课题背景和意义}{chapter.1}% 6
+\BOOKMARK [2][-]{subsection.1.1.1}{1.1.1 托卡马克等离子体的电子温度与密度诊断}{section.1.1}% 7
+\BOOKMARK [2][-]{subsection.1.1.2}{1.1.2 氦原子的能级特点与利用其发射光谱进行诊断的优势}{section.1.1}% 8
+\BOOKMARK [2][-]{subsection.1.1.3}{1.1.3 氦原子发射光谱诊断的研究进展}{section.1.1}% 9
+\BOOKMARK [2][-]{subsection.1.1.4}{1.1.4 国内托卡马克等离子体的光谱诊断研究}{section.1.1}% 10
+\BOOKMARK [2][-]{subsection.1.1.5}{1.1.5 SUNIST 装置、等离子体参数范围与诊断需求}{section.1.1}% 11
+\BOOKMARK [2][-]{subsection.1.1.6}{1.1.6 课题意义}{section.1.1}% 12
+\BOOKMARK [1][-]{section.1.2}{1.2 本文研究思路、内容和结构}{chapter.1}% 13
+\BOOKMARK [0][]{chapter.2}{第 2 章 等离子体原子发射谱线与碰撞辐射模型}{ctitle.-1}% 14
+\BOOKMARK [1][-]{section.2.1}{2.1 原子发射谱线}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 自发辐射跃迁}{section.2.1}% 16
+\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 描述原子激发态数密度分布的模型}{section.2.1}% 17
+\BOOKMARK [2][-]{subsection.2.1.3}{2.1.3 谱线辐射在等离子体内的传播}{section.2.1}% 18
+\BOOKMARK [1][-]{section.2.2}{2.2 碰撞辐射模型}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.3}{2.3 氦原子碰撞辐射模型在诊断应用中存在的问题}{chapter.2}% 20
+\BOOKMARK [1][-]{section.2.4}{2.4 小结}{chapter.2}% 21
+\BOOKMARK [0][]{chapter.3}{第 3 章 SUNIST 参数范围下氦原子碰撞辐射模型的研究}{ctitle.-1}% 22
+\BOOKMARK [1][-]{section.3.1}{3.1 氦原子碰撞辐射模型的建立}{chapter.3}% 23
+\BOOKMARK [2][-]{subsection.3.1.1}{3.1.1 氦原子的能级分布与能级结构处理}{section.3.1}% 24
+\BOOKMARK [2][-]{subsection.3.1.2}{3.1.2 氦原子激发和电离过程的选择}{section.3.1}% 25
+\BOOKMARK [2][-]{subsection.3.1.3}{3.1.3 氦放电等离子体光性厚度的计算}{section.3.1}% 26
+\BOOKMARK [2][-]{subsection.3.1.4}{3.1.4 氦原子能级数密度反应速率方程的建立}{section.3.1}% 27
+\BOOKMARK [2][-]{subsection.3.1.5}{3.1.5 氦原子反应过程速率系数的计算}{section.3.1}% 28
+\BOOKMARK [2][-]{subsection.3.1.6}{3.1.6 对反应速率方程的准稳态近似}{section.3.1}% 29
+\BOOKMARK [2][-]{subsection.3.1.7}{3.1.7 等效电荷数计算结果与 FLYCHK 的对比}{section.3.1}% 30
+\BOOKMARK [1][-]{section.3.2}{3.2 氦原子碰撞辐射模型的研究}{chapter.3}% 31
+\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 各激发态能级的主要产生过程研究}{section.3.2}% 32
+\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 速率系数不确定性到激发态数密度计算误差传递的研究}{section.3.2}% 33
+\BOOKMARK [2][-]{subsection.3.2.3}{3.2.3 碰撞辐射模型中包含的能级对计算结果影响的研究}{section.3.2}% 34
+\BOOKMARK [2][-]{subsection.3.2.4}{3.2.4 对谱线比计算结果影响的估计}{section.3.2}% 35
+\BOOKMARK [1][-]{section.3.3}{3.3 SUNIST 等离子体谱线比诊断方法的建立}{chapter.3}% 36
+\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 谱线强度比的选择}{section.3.3}% 37
+\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2 谱线比法确定等离子体参数的过程}{section.3.3}% 38
+\BOOKMARK [2][-]{subsection.3.3.3}{3.3.3 实际谱线比测量误差到 Te 和 Ne 诊断误差传递的研究}{section.3.3}% 39
+\BOOKMARK [1][-]{section.3.4}{3.4 小结}{chapter.3}% 40
+\BOOKMARK [0][]{chapter.4}{第 4 章 SUNIST 上原子发射光谱的测量}{ctitle.-1}% 41
+\BOOKMARK [1][-]{section.4.1}{4.1 SUNIST 上的诊断设备与相关系统}{chapter.4}% 42
+\BOOKMARK [1][-]{section.4.2}{4.2 SUNIST 上原子发射光谱诊断系统}{chapter.4}% 43
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 SUNIST上光谱测量系统与路径安排}{section.4.2}% 44
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 SUNIST 上使用的单色仪参数与标定}{section.4.2}% 45
+\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 光电倍增管信号降噪与基线干扰的消除}{section.4.2}% 46
+\BOOKMARK [1][-]{section.4.3}{4.3 SUNIST 原子发射光谱测量手段的建立}{chapter.4}% 47
+\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 SUNIST 上基于重复放电的谱线测量}{section.4.3}% 48
+\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 SUNIST 放电重复性的改善}{section.4.3}% 49
+\BOOKMARK [1][-]{section.4.4}{4.4 SUNIST 氦放电等离子体谱线测量结果}{chapter.4}% 50
+\BOOKMARK [1][-]{section.4.5}{4.5 小结}{chapter.4}% 51
+\BOOKMARK [0][]{chapter.5}{第 5 章 SUNIST 氦放电等离子体的发射光谱诊断}{ctitle.-1}% 52
+\BOOKMARK [1][-]{section.5.1}{5.1 氦原子发射谱线强度测量结果}{chapter.5}% 53
+\BOOKMARK [1][-]{section.5.2}{5.2 谱线比法诊断 Te 和 Ne}{chapter.5}% 54
+\BOOKMARK [1][-]{section.5.3}{5.3 氦原子碰撞辐射模型的复核}{chapter.5}% 55
+\BOOKMARK [1][-]{section.5.4}{5.4 光谱测量的弦积分特性与谱线强度涨落的初步研究}{chapter.5}% 56
+\BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 光谱测量弦积分特性的研究}{section.5.4}% 57
+\BOOKMARK [2][-]{subsection.5.4.2}{5.4.2 谱线强度涨落的初步研究}{section.5.4}% 58
+\BOOKMARK [1][-]{section.5.5}{5.5 小结}{chapter.5}% 59
+\BOOKMARK [0][]{chapter.6}{第 6 章 结论、课题工作存在的不足与后续工作展望}{ctitle.-1}% 60
+\BOOKMARK [1][-]{section.6.1}{6.1 课题完成的工作和创新点}{chapter.6}% 61
+\BOOKMARK [1][-]{section.6.2}{6.2 课题存在的不足和后续工作展望}{chapter.6}% 62
+\BOOKMARK [0][]{section*.96}{参考文献}{ctitle.-1}% 63
+\BOOKMARK [0][]{section*.98}{致 谢}{ctitle.-1}% 64
+\BOOKMARK [0][]{section*.100}{声 明}{ctitle.-1}% 65
+\BOOKMARK [0][]{appendix.A}{附录 A 各激发态能级的主要产生过程}{ctitle.-1}% 66
+\BOOKMARK [0][]{appendix.B}{附录 B 速率系数不确定性传递函数的推导}{ctitle.-1}% 67
+\BOOKMARK [0][]{section*.112}{个人简历、在学期间发表的学术论文与研究成果}{ctitle.-1}% 68
