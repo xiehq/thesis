@@ -1,17 +1,23 @@
 ﻿\graphicspath{{figures/chap02/}}
 
-\chapter{等离子体原子发射谱线与碰撞辐射模型}
+%\chapter{等离子体原子发射谱线与碰撞辐射模型}
+\chapter{原子谱线强度比诊断等离子体电子温度与密度概述}
 \label{chap:crm-intro}
 
-\section{原子发射谱线}
+不同元素原子的能级结构是不相同的，具有不同的光谱辐射。通过对原子发射光谱的测量和分析，不仅可以定性地分析气体成分，还可以定量地分析各种元素的含量。根据不同原子受激发以及发射光谱的难易程度还可以进行等离子参数的诊断测量，例如电子温度 $T_{\rm e}$ 和电子密度 $N_{\rm e}$。
+
+\section{原子谱线强度比诊断电子温度与密度}
 
 原子受到激发后，由高能级 $j$ 跃迁到低能级 $i$ 时，将辐射出一定能量的光子，光子的波长 $\lambda_{ji}$ 由能级间的能量差 $\Delta E$ 决定：
 \begin{equation}
   \lambda_{ji} = \frac{h{\rm c}}{\Delta E}
 \end{equation}
-式中，$h$ 为普朗克常数（Planck Constant），${\rm c}$ 为光速。
-
-不同元素原子的能级结构是不相同的，具有不同的光谱辐射。通过对原子发射光谱的测量和分析，不仅可以定性地分析气体成分，还可以定量地分析各种元素的含量。根据不同原子受激发以及发射光谱的难易程度还可以进行等离子参数的诊断测量，例如电子温度 $T_{\rm e}$ 和电子密度 $N_{\rm e}$。
+式中，$h$ 为普朗克常数（Planck Constant），${\rm c}$ 为光速。其光子数辐射率可以写为\cite{Wiese1966:book}：
+\begin{equation}
+  %\label{}
+  \epsilon_{ji}=\frac{1}{4\pi}N_{j}A_{ji}
+\end{equation}
+其中，$N_j$ 为跃迁上能级 $j$ 的粒子数密度，$A_{ji}$ 为自发辐射跃迁速率系数（爱因斯坦系数）。
 
 假设均匀等离子体条件下，光谱测量系统获得的光子辐射计数率 $I_{\lambda_{ji}}$ 为：
 \begin{equation}
@@ -24,18 +30,49 @@
   \frac{\epsilon_{ji}T_{\lambda_{ji}}\eta_{\lambda_{ji}}}{\epsilon_{qp}T_{\lambda_{qp}}\eta_{\lambda_{qp}}}
   =\frac{1}{F_R}\frac{T_{\lambda_{ji}}N_jA_{ji}}{T_{\lambda_{qp}}N_qA_{qp}}
 \end{equation}
-其中，$F_R$ 为与仪器响应相关的系数，实验中可以进行标定。
+其中，$F_R$ 为与仪器响应相关的系数，实验中可以进行标定；自发辐射跃迁速率系数可以通过理论计算获得精确的数值，且一般不受等离子体参数的影响（第 \ref{sec:chap02:Aji} 节）。而由于跃迁上能级的粒子数密度 $N_{j}$ 与 $N_{q}$ 随电子温度与密度具有不同的变化趋势，这样通过建立反映原子反应过程的模型，事先计算出谱线比（式 \ref{eq:chap02:line-ratio}）随等离子体电子温度与密度的变化趋势，在实验中测量出对应谱线的强度比，即可以根据模型计算结果反推出等离子体的电子温度和密度。
 
-由此可见，理论上要计算有多少光子从辐射出等离子体区域，需要对以下三个过程进行分析：1）原子激发态自发辐射跃迁几率；2）特定的等离子体条件下原子激发态数密度；3）光子在等离子体中的传播。
+以 Z 箍缩氖等离子体中氖原子的 $K$ 壳层谱线辐射为例\cite{LiJing:WLXB}，通过建立描述原子反应过程的“碰撞--辐射”模型，计算出 ${\rm H}_\alpha$ 和 ${\rm I.C.}$ 谱线分别与 ${\rm He}_\alpha$ 谱线的强度比在电子温度--电子密度空间内的分布，其等高线如图 \ref{fig:chap02:lijing-a} 与 \ref{fig:chap02:lijing-b} 所示。其中谱线强度比 ${\rm H}_\alpha/{\rm He}_\alpha$ 主要与电子温度相关，谱线强度比 ${\rm I.C.}/{\rm He}_\alpha$ 主要与电子密度相关，如果在实验中同时测量该两谱线强度比值分别为 $0.53$ 与 $0.15$ 时，即可以同时确定等离子体的电子温度与密度参数，如图 \ref{fig:chap02:lijing-c} 所示。
 
-\subsection{自发辐射跃迁}
+\begin{figure}%[H]
+  \centering
+  \begin{subfigure}{0.45\textwidth}
+  \begin{overpic}[width=\textwidth]{lijing-a.pdf}
+    \put(15,63.5){\mbox{\colorbox{white}{\small\hspace{1em}}}}
+    %\put(-2,30){\rotatebox{90}{\mbox{\colorbox{white}{\small\hspace{2em}激发截面 (${\rm m}^2$)\hspace{2em}}}}}
+  \end{overpic}
+  \caption{谱线强度比 ${\rm H}_\alpha/{\rm He}_\alpha$ 等高线}
+  \label{fig:chap02:lijing-a}
+  \end{subfigure}
+  \hspace{0.03\textwidth}
+  \begin{subfigure}{0.45\textwidth}
+  \begin{overpic}[width=\textwidth]{lijing-b.pdf}
+    \put(86,65){\mbox{\colorbox{white}{\hspace{0.5em}}}}
+    %\put(-2,25){\rotatebox{90}{\mbox{\colorbox{white}{\small\hspace{2em}激发速率系数 (${\rm m}^3/{\rm s}$)\hspace{2em}}}}}
+  \end{overpic}
+  \caption{谱线强度比 ${\rm I.C.}/{\rm He}_\alpha$ 等高线}
+  \label{fig:chap02:lijing-b}
+  \end{subfigure}
+  \\%\hspace{0.03\textwidth}
+  \begin{subfigure}{0.45\textwidth}
+  \begin{overpic}[width=\textwidth]{lijing-c.pdf}
+    %\put(30,0){\mbox{\colorbox{white}{\small\hspace{2em}$T_{\rm e} (${\rm eV}$)$\hspace{2em}}}}
+    %\put(-2,25){\rotatebox{90}{\mbox{\colorbox{white}{\small\hspace{2em}激发速率系数 (${\rm m}^3/{\rm s}$)\hspace{2em}}}}}
+  \end{overpic}
+  \caption{同时确定电子温度和密度的关系曲线}
+  \label{fig:chap02:lijing-c}
+  \end{subfigure}
+  \caption{Z 箍缩氖等离子体中氖 $K$ 壳层的 ${\rm H}_\alpha$ 和 ${\rm I.C.}$ 与 ${\rm He}_\alpha$ 谱线的强度比的模型计算等高线（图 \ref{fig:chap02:lijing-a} 与 \ref{fig:chap02:lijing-b}）与两谱线强度比分别为 $0.53$ 和 $0.15$ 时同时确定电子温度与密度的关系曲线（图 \ref{fig:chap02:lijing-c}）。图片来自 \onlinecite{LiJing:WLXB}。}
+  \label{fig:chap02:lijing}
+\end{figure}
 
-等离子体中的原子自高能级 $j$ 向低能级 $i$ 跃迁时，发出波长为 $\lambda_{ji}$ 的光子辐射。其光子数辐射率可以写为\cite{Wiese1966:book}：
-\begin{equation}
-  %\label{}
-  \epsilon_{ji}=\frac{1}{4\pi}N_{j}A_{ji}
-\end{equation}
-其中，$N_j$ 为跃迁上能级 $j$ 的粒子数密度，$A_{ji}$ 为自发辐射跃迁速率系数（爱因斯坦系数）。
+%\section{原子发射谱线}
+\section{影响原子发射谱线强度的过程}
+
+理论上要计算有多少光子从辐射出等离子体区域，需要对以下三个过程进行分析：1）原子激发态自发辐射跃迁几率；2）特定的等离子体条件下原子激发态数密度；3）光子在等离子体中的传播。
+
+\subsection{自发辐射跃迁几率}
+\label{sec:chap02:Aji}
 
 自发辐射跃迁几率可以通过原子物理相关理论计算获得，不同的等离子体环境会对原子状态产生影响，但一般来讲等离子体环境对原子激发态自发辐射跃迁几率的影响微乎其微，可以忽略。$j\to i$ 自发辐射跃迁速率系数 $A_{ji}$ 可以由以下方程给出\cite{Kolb1964:A-formular}：
 \begin{equation}
@@ -107,12 +144,12 @@
 \subsection{谱线辐射在等离子体内的传播}
 
 激发态自发辐射跃迁产生的光子在等离子体的传播过程一般需要复杂的辐射输运方程进行描述\cite{Holstein1947:PhysRev.72.1212,Holstein1951:PhysRev.83.1159,Phelps1958:PhysRev.110.1362}。
-实际计算中，人们一般采取简化的处理方法，如使用光性厚度和逃跑因子描述等离子体对光子辐射的吸收\cite{Johnson1972:collisionalstrength,boivin2001}。
+实际计算中，人们一般采取简化的处理方法，如使用光学厚度和逃跑因子描述等离子体对光子辐射的吸收\cite{Johnson1972:collisionalstrength,boivin2001}。
 
-其中，光学逃跑因子 $\Lambda$（optical escape factor）与可以逃离等离子体区域的光子比例相关，逃跑因子接近或等于 $1$ 时，等离子体为光性薄的。平均光性厚度 $\tau_0$（mean optical depth）为等离子体对光谱的指数吸收因子（$I=I_0{\rm e}^{-\tau_0}$），当 $\tau_0\le0.01$ 时，对应的等离子体为光性薄的。
+其中，光学逃跑因子 $\Lambda$（optical escape factor）与可以逃离等离子体区域的光子比例相关，逃跑因子接近或等于 $1$ 时，等离子体为光性薄的。平均光学厚度 $\tau_0$（mean optical depth）为等离子体对光谱的指数吸收因子（$I=I_0{\rm e}^{-\tau_0}$），当 $\tau_0\le0.01$ 时，对应的等离子体为光性薄的。
 
-%要对逃跑因子和光性厚度进行计算，需要针对每条谱线辐射列出响应的辐射和吸收输运方程。
-对于氦等离子体，如果谱线的多普勒展宽为主要展宽机制时\cite{Wiese1966:book}，平均光性厚度和光学逃跑因子可以用下列公式计算\cite{Drawin1973:OEF,boivin2001}：
+%要对逃跑因子和光学厚度进行计算，需要针对每条谱线辐射列出响应的辐射和吸收输运方程。
+对于氦等离子体，如果谱线的多普勒展宽为主要展宽机制时\cite{Wiese1966:book}，平均光学厚度和光学逃跑因子可以用下列公式计算\cite{Drawin1973:OEF,boivin2001}：
 \begin{align}
   \tau_0&=\frac{n_ig_jA_{ji}\lambda_{ji,0}^3r}{8g_i\pi^{3/2}v_{\rm th}} \label{eq:chap02:mod}\\
   \Lambda&=1-\left(\frac{\tau_0}{\sqrt{2}}-\frac{\tau_0^2}{2!\sqrt{3}}+\frac{\tau_0^3}{3!\sqrt{4}}\cdots\frac{(-1)^{n+1}\tau_0^n}{n!\sqrt{n+1}}\right)
