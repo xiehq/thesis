@@ -9,7 +9,7 @@
 
 以未来大规模聚变能应用为目的，托卡马克高温聚变等离子体研究早已取得如等效 Q 值达 $1.25$\cite{JT60U:Q1.25} 以及 $16.1\,{\rm MW}$\cite{JET:NF:16MW:1,JET:NF:16MW:2} 的瞬时聚变功率输出等显著成果，国际热核聚变堆（ITER）的开工建设\cite{Holtkamp2007:ITER}成为托卡马克聚变研究一个新的里程碑。可控聚变研究的进步离不开等离子体诊断技术和工具的应用，可以说一个托卡马克装置的诊断能力直接决定了该装置物理研究的深度和运行表现。为了在托卡马克运行中实现等离子体的控制和研究，需要对数目众多的等离子体参数进行诊断测量，其中电子温度 $T_{\rm e}$ 与密度 $N_{\rm e}$ 是最基本也是最重要的物理量\cite{ITERPhysics:chap7}。
 
-对于托卡马克边界温度较低的等离子体，静电探针（即朗谬尔 Langmuir 探针）\cite{LangmuirProbe}是广泛应用的一种诊断手段。静电探针利用等离子体的壳层理论，将一小段加入偏置电压的高熔点金属伸入等离子体，通过测量其伏安特性曲线即可得到等离子体的 $T_{\rm e}$ 和 $N_{\rm e}$ 参数，特别是静电三探针\cite{tripleprobe}的使用，将静电探针的应用范围进一步扩大。通过对静电探针的结构进行精心设计，还可以测量等离子体边界的很多其他物理信息\cite{LangmiurProbe-EdgeTurbulance,LangmiurProbe-ZonalFlow}。
+对于托卡马克边界温度较低的等离子体，静电探针（即朗谬尔 Langmuir 探针）\cite{LangmuirProbe}是广泛应用的一种诊断手段。静电探针利用等离子体的鞘层理论，将一小段加入偏置电压的高熔点金属伸入等离子体，通过测量其伏安特性曲线即可得到等离子体的 $T_{\rm e}$ 和 $N_{\rm e}$ 参数，特别是静电三探针\cite{tripleprobe}的使用，将静电探针的应用范围进一步扩大。通过对静电探针的结构进行精心设计，还可以获得等离子体边界的很多其他物理信息\cite{LangmiurProbe-EdgeTurbulance,LangmiurProbe-ZonalFlow}。
 
 对于托卡马克芯部的等离子体，其温度很高，
 %托卡马克研究中等离子体的温度越来越高，
@@ -38,12 +38,14 @@
 
 \hspace{0.25em}\textbullet\hspace{0.45em}可同时诊断 $T_{\rm e}$ 和 $N_{\rm e}$ 的束发射光谱（beam emission spectroscopy）\cite{Li-beam,Schmitz2008}测量
 
+\hspace{0.25em}\textbullet\hspace{0.45em}可诊断离子温度 $T_{\rm i}$ 和等离子体旋转的电荷交换光谱（charge-exchange spectroscopy）\cite{Isler:CXRS:1,Isler:CXRS:2}测量
+
 %而将探测粒子束从边界打入等离子体，探测该粒子束的谱线辐射可以同时确定等离子体的 。
 
 %这些“主动”式的诊断手段，首先需要针对实验装置一套特定的探测束发生设备，然后对探测束的入射路径以及信号接收测量设备进行设计和安装调试，其诊断系统比较复杂，且诊断系统一般都需要进行特殊的设计和考虑。
 
 %同时，
-托卡马克等离子体具有自微波波段至 X 射线波段丰富的辐射，只需“被动”地接收测量这些辐射即可获得大量的等离子体信息，例如：辐射\cite{Bolometer:DIIID:radiatedPower,Bolometer:JET:radiatedPower}在 等离子体的能量平衡中起着重要作用；具有等离子体参数空间分辨诊断能力的束发射光谱法被广泛用来进行托卡马克边界物理研究\cite{BES:PPCF:1993}；而对杂质或工质气体粒子的光谱测量可以用来研究杂质的输运行为\cite{HT7:CarbonTransport}、 粒子循环与输运物理\cite{ParticleTransport:PPCF:2009}等。其中，可以用于等离子体 $T_{\rm e}$ 和 $N_{\rm e}$ 诊断的方法主要有：
+托卡马克等离子体具有自微波波段至 X 射线波段丰富的辐射，只需“被动”地接收测量这些辐射即可获得大量的等离子体信息，例如：辐射\cite{Bolometer:DIIID:radiatedPower,Bolometer:JET:radiatedPower}在 等离子体的能量平衡中起着重要作用；具有等离子体参数空间分辨诊断能力的束发射光谱法被广泛用来进行托卡马克边界物理研究\cite{BES:PPCF:1993}；而对杂质或工质气体粒子的光谱测量可以用来研究其输运以及壁循环行为\cite{HT7:CarbonTransport,ParticleTransport:PPCF:2009}等。其中，可以用于等离子体 $T_{\rm e}$ 和 $N_{\rm e}$ 诊断的方法主要有：
 
 \hspace{0.25em}\textbullet\hspace{0.45em}可诊断 $T_{\rm e}$ 的 X 射线能谱测量\cite{Xray-spectrum-Te-Ti}
 
@@ -102,13 +104,13 @@
 \cite{Sovie1964-He-coronal,Vries1966-He-coronal}，是基于日冕模型（coronal model）的，后来研究中发现此方法只适用于电子密度很低的等离子体, 当 $N_{\rm e}$ 达到 $10^{11}\,{\rm cm}^{-3}$ 以上时，激发态的电子碰撞退激发过程对激发态数密度的影响加剧，此时应该使用碰撞辐射模型（collisional-radiative model）来计算激发态数密度分布\cite{Newe1966-He-CRRecommend}。
 
 人们使用氦束发射光谱（beam emission spectroscopy）诊断等离子体参数是在 TEXTOR\cite{Schweer1992174} 上开始的。后来的类似诊断\cite{Davies1997-HeBES-JET,Field-HeBES-COMPASSD,Hidalgo-HeBES-TJII}
-都使用了 TEXTOR 的碰撞辐射模型，该模型中考虑了包括基态在内的主量子数 $n\le 4$ 的共 19 个能级。当氦束为稳态束流时，本地局域的氦原子激发态数密度保持稳定，只与本地的 $T_{\rm e}$ 和 $N_{\rm e}$ 相关，氦束在等离子体中直线传播，当氦原子被碰撞电离后，即沿磁力线运动而离开束流区域，所以氦离子的复合过程可以忽略，这样用于氦束发射光谱诊断的碰撞辐射模型被大大简化。
+都使用了 TEXTOR 的碰撞辐射模型，该模型中考虑了包括基态在内的主量子数 $n\le 4$ 的共 19 个能级。当氦束为稳态束流时，束流中局域的氦原子激发态数密度保持稳定，只与本地的 $T_{\rm e}$ 和 $N_{\rm e}$ 相关，氦束在等离子体中直线传播，当氦原子被碰撞电离后，即沿磁力线运动而离开束流区域，所以氦离子的复合过程可以忽略，这样用于氦束发射光谱诊断的碰撞辐射模型被大大简化。
 
 后来在 MST 上进行了高速氦束（fast helium beam）发射谱线的诊断研究\cite{Ahn2007-He-BES}，并对例如杂质、磁场和离子碰撞等因素对谱线的影响进行了讨论，模型采用了 ADAS\cite{ADAS} 的代码和截面数据，包含了众多能级（$n\le 110$），对主量子数能级 $n\le5$ 的能级根据 $nlSL$ 分别处理，将更高能级自旋相同的能级简并。最近 TEXTOR 对模型进行了进一步发展\cite{Schmitz2008}，包括了较高的能级粒子，并对重粒子碰撞跃迁和电荷交换过程进行了考虑。而 MAP-II 偏滤器模拟装置\cite{Iida2010-HeBES-MAPII}的束发射光谱诊断工作中使用了 M. Goto 的模型\cite{Goto2003-HeCRM}，并对辐射在等离子体中的捕获效应进行了讨论。
 
 \begin{table}
 \caption{氦束发射光谱诊断等离子体参数实验及使用的碰撞辐射模型}
-{\small nlSL：能级以 nlSL 区分；nS：能级以自旋角动量区分；n：能级仅以主量子数区分；e-He：电子碰撞过程；rad：辐射过程；CX：电荷交换过程；ion-ion/dblion：离子碰撞电离与双电子电离；ion-exc/deexc：离子碰撞激发与退激发；D-tran：氘输运过程；rad-trap：辐射俘获效应；Goto：与文献 \onlinecite{Goto2003-HeCRM} 相同。}
+{\small nlSL：能级以 nlSL 区分；nS：能级以自旋角动量区分；n：能级仅以主量子数区分；e-He：电子碰撞过程；rad：辐射过程；CX：电荷交换过程；ion-ion/dblion：离子碰撞电离与双电子电离；ion-exc/deexc：离子碰撞激发与退激发；D-tran：氘输运过程；rad-trap：辐射俘获效应。}
 \label{tab:chap01:HeBES:CRM}
 \begin{center}
 \begin{tabular}{llllll}
@@ -153,8 +155,8 @@
     MAP-II & \makecell[l]{偏滤器\\ 模拟装置}
             & \makecell[l]{$3^1{\rm D}$, $3^1{\rm P}$\\
                 $4^3{\rm S}$, $3^3{\rm D}$, $3^3{\rm S}$}
-            & Goto
-            & Goto, rad-trap
+            & 与 \onlinecite{Goto2003-HeCRM} 相同
+            & \onlinecite{Goto2003-HeCRM}, rad-trap
             & \onlinecite{Iida2010-HeBES-MAPII} \\
 \bottomrule[1.5pt]
 \end{tabular}
@@ -163,7 +165,7 @@
 
 表 \ref{tab:chap01:HeBES:CRM} 列出了用氦束发射光谱作为等离子体诊断手段的一些实验，这些实验主要集中在对边界和偏滤器等离子体的诊断，氦束发射光谱诊断法可以获得很高空间分辨率的 $T_{\rm e}$ 和 $N_{\rm e}$ 参数，对托卡马克等离子体的粒子输运、L--H 转换，MHD 约束行为的研究有很重要的作用。
 
-在氦束发射光谱诊断的碰撞辐射模型处理上，一般忽略了离子对能级数密度的贡献。在氦（或混入氦气）等离子体中，氦离子的影响则不再可以忽略，T. Fujimoto\cite{Fujimoto1979-HeCR} 建立了适用于低温氦气放电等离子体（$N_{\rm e}=6.3\times10^{10}\,{\rm cm}^{-3}$, $T_{\rm e}=6\,{\rm eV}$）的碰撞辐射模型。在每种不同的等离子体条件下，添加不同的过程或外界条件的影响，T. Fujimoto 的模型在实验中得到了充分的应用和验证。同时，M. Goto 分别在 1997\cite{Goto1997-HeCRM-WT3} 和2003\cite{Goto2003-HeCRM} 年根据最新的碰撞截面数据对此模型进行了修订和更新。基于此模型在一些等离子体中的诊断应用总结于表 \ref{tab:chap01:FujimotoHeCRM:applications} 中。
+在氦束发射光谱诊断的碰撞辐射模型处理上，氦原子被电离后便沿磁力线运动离开束流区域，在模型中则一般忽略氦离子对能级数密度的贡献。但是，在氦（或混入氦气）等离子体中，氦离子的影响则不再可以忽略，T. Fujimoto\cite{Fujimoto1979-HeCR} 建立了适用于低温氦气放电等离子体（$N_{\rm e}=6.3\times10^{10}\,{\rm cm}^{-3}$, $T_{\rm e}=6\,{\rm eV}$）的碰撞辐射模型。在每种不同的等离子体条件下，添加不同的过程或外界条件的影响，T. Fujimoto 的模型在实验中得到了充分的应用和验证。同时，M. Goto 分别在 1997\cite{Goto1997-HeCRM-WT3} 和2003\cite{Goto2003-HeCRM} 年根据最新的碰撞截面数据对此模型进行了修订和更新。基于此模型在一些等离子体中的诊断应用总结于表 \ref{tab:chap01:FujimotoHeCRM:applications} 中。
 
 \begin{table}
 \caption{T. Fujimoto 的碰撞辐射模型在不同等离子体条件下的应用}
@@ -217,7 +219,7 @@
 
 国内的托卡马克研究者也进行了大量的光谱诊断工作。在 CT-6B 装置中，李赞良等人\cite{LiZanliang:CT-6B:Te} 在 1989 年通过氧离子的真空紫外光谱测量了电流上升阶段的电子温度；后来赵庆勋等人\cite{ZhaoQingxun:CT-6B:Rotate}在 1997 年根据 OII $464.2\,{\rm nm}$、CIII $464.7\,{\rm nm}$ 和 ${\rm H}_\alpha$ 谱线的多普勒位移，测量了等离子体极向转动速度的径向分布。在 HT-7 装置上，刘建坤\cite{LiuJiankun2001:HT-7:PDA}等人使用光电二极管阵列，测量了 ${\rm H}_\alpha/{\rm D}_\alpha$ 的光谱，对粒子约束时间进行了系统研究；周倩等人\cite{ZhouQian2005:HT-7:carbon}在 2005 年通过对碳杂质的谱线辐射进行空间分辨测量，研究了碳杂质在径向的输运行为并在 2007 年完善了用于轻杂质粒子输运研究的光谱诊断系统；2010 年 HT-7 上用于电荷交换复合光谱诊断的诊断中心束束系统建成，实现了离子温度剖面分布测量\cite{ShiYuejiang2010:HT-7:CXRS}；同时，陈开云等人\cite{ChenKaiyun2009:HT-7:SXTomography} 在 HT-7 上开展了基于断层扫描技术的软 X 射线诊断工作。在 J-TEXT 装置上通过测量软 X 射线辐射进行了反锯齿行为（inverse sawtooth activity）的研究\cite{FengXD2013:J-TEXT:softxray}。 崔正英等人\cite{CuiZhengying:2010:VUV}在 HL-2A 装置上建立了具有空间分辨诊断能力的真空紫外光谱测量系统，可以用于边界杂质和温度分布的测量。在 EAST 装置上，新建立了充气成像系统（gas puffing imaging），此系统可以有效的测量等离子体边界的湍流结构\cite{LiuSC:2012:EASTGPI}，利用此系统成功研究了 L--H 转换的中间振荡过程（intermediate oscillatory phase）\cite{XuGS2014:EASTGPI:L-I-H}。
 
-由此可见，虽然国内托卡马克光谱诊断研究众多，但基于碰撞辐射模型，通过测量原子谱线辐射强度比的方法诊断 $T_{\rm e}$ 和 $N_{\rm e}$ 参数的研究在国内尚未见报道。而低温等离子体研究领域，国内的研究者处于领先水平\cite{ZhuXM2010:Review}。通过低温等离子体可见光谱辐射诊断的研究\cite{ZhuXM2009:Thesis}发现，根据等离子体条件做必要的假设，通过在碰撞辐射模型中包含最主要的粒子和过程，可以对谱线比法诊断等离子体进行有效的指导。
+由此可见，虽然国内托卡马克光谱诊断研究众多，但基于碰撞辐射模型，通过测量原子谱线辐射强度比的方法诊断 $T_{\rm e}$ 和 $N_{\rm e}$ 参数的研究在国内尚未见报道。而低温等离子体研究领域，国内的研究者对此进行了大量有意义的研究工作\cite{ZhuXM2010:Review}。通过低温等离子体可见光谱辐射诊断的研究\cite{ZhuXM2009:Thesis} 发现，根据等离子体条件做必要的假设，通过在碰撞辐射模型中包含最主要的粒子和过程，可以对谱线比法诊断等离子体进行有效的指导。
 
 \subsection{SUNIST 装置、等离子体参数范围与诊断需求}
 
@@ -228,13 +230,13 @@
 	\put(51,45){SUNIST}
   \end{overpic}
   %\includegraphics[width=0.6\textwidth]{sunist_parram_vs_lineratio_range_2.pdf}
-  \caption{氦谱线比法诊断适用的电子参数范围与 SUNIST 等离子体参数范围估计。$(T_{\rm e},N_{\rm e})_{\rm LP}$ 表示静电探针测量的边界等离子体参数\cite{WangWH2005:PPCF:Edge}；$(\overline{N_{\rm e}})_{\rm MI}$ 表示微波干涉仪测量的电子密度范围值（第 \ref{sec:chap04:lineratio-ne-te} 节）。点划线表示氦原子谱线比法的适用范围；点线表示 SUNIST 等离子体电子参数估计范围。}
+  \caption{氦谱线比法诊断适用的电子参数范围与 SUNIST 等离子体参数范围估计。$(T_{\rm e},N_{\rm e})_{\rm LP}$ 表示静电探针测量的 SUNIST 边界等离子体参数\cite{WangWH2005:PPCF:Edge}；$(\overline{N_{\rm e}})_{\rm MI}$ 表示微波干涉仪测量的电子密度范围值（第 \ref{sec:chap04:lineratio-ne-te} 节）。点划线表示氦原子谱线比法的适用范围；点线表示 SUNIST 等离子体电子参数估计范围。}
   \label{fig:chap01:te-ne-range}
 \end{figure}
 
 中国联合球形托卡马克（Sino-UNIted Spherical Tokamak，SUNIST）是我国第一台，也是唯一一台球形托卡马克装置\cite{Heyexi2002:SUNIST}，图 \ref{fig:chap01:sunist-sketch} 所示为 SUNIST 装置示意图。
 
-SUNIST 装置的主要参数为：大半径 $R_0=0.3\,{\rm m}$，小半径 $a=0.23\,{\rm m}$，欧姆放电时的等离子体电流 $I_{\rm p}\sim50\,{\rm kA}$，边界电子温度 $T_{\rm e}=20\sim100\,{\rm eV}$ 和电子密度 $N_{\rm e}=1\sim10\times10^{12}\,{\rm cm}^{-3}$\cite{WangWH2005:PPCF:Edge}（SUNIST 放电时的电子参数范围估计如图 \ref{fig:chap01:te-ne-range} 所示），真空室本底气压$p_{\rm gas,b}\sim5\times10^{-5}\,{\rm Pa}$，氦气放电充气气压范围 $p_{\rm gas}=2\sim5\times10^{-3}\,{\rm Pa}$。
+SUNIST 装置的主要参数为：大半径 $R_0=0.3\,{\rm m}$，小半径 $a=0.23\,{\rm m}$，欧姆放电时的等离子体电流 $I_{\rm p}\sim50\,{\rm kA}$，边界电子温度 $T_{\rm e}=20\,{\rm eV}\sim100\,{\rm eV}$ 和电子密度 $N_{\rm e}=1\times10^{12}\,{\rm cm}^{-3}\sim10\times10^{12}\,{\rm cm}^{-3}$\cite{WangWH2005:PPCF:Edge}（SUNIST 放电时的电子参数范围估计如图 \ref{fig:chap01:te-ne-range} 所示），真空室本底气压$p_{\rm gas,b}\sim5\times10^{-5}\,{\rm Pa}$，氦气放电充气气压范围 $p_{\rm gas}=2\times10^{-3}\,{\rm Pa}\sim5\times10^{-3}\,{\rm Pa}$。
 
 %SUNIST 实验中，传统的等离子体电子参数诊断手段也面临着挑战，如静电探针会被高温等离子体烧蚀（图 \ref{fig:chap01:ProbeVapor}），这不但会缩短静电探针的使用寿命，而且会为诊断数据解析带来困难，烧蚀释放的重元素杂质粒子也会污染等离子体；同时，
 SUNIST 做为小型球形托卡马克实验装置，研究人员匮乏，所以 SUNIST 装置亟需部署低成本、不干扰等离子体、少维护或免维护的可靠诊断手段。
@@ -262,7 +264,7 @@ SUNIST 做为小型球形托卡马克实验装置，研究人员匮乏，所以 
 \subsection{课题意义}
 \label{sec:ketiyiyi}
 
-利用等离子体的谱线辐射强度比进行诊断的方法具有不干扰等离子体，光谱测量设备简单且不受复杂电磁环境的影响以及仅需进行相对标定的优点。作为聚变产物，氦在聚变等离子体实验装置中是一种固有元素。所以利用氦原子谱线辐射强度比进行电子参数诊断不会为等离子体带入新的杂质，在高温聚变等离子体研究中得到了充分的重视。
+利用等离子体的谱线辐射强度比进行诊断的方法具有不干扰等离子体，光谱测量设备简单且不受复杂电磁环境的影响以及仅需进行相对标定的优点。作为聚变产物，氦在未来聚变堆中是一种固有元素，所以利用氦原子谱线辐射强度比进行电子参数诊断不会为等离子体带入新的杂质，在高温聚变等离子体研究中得到了充分的重视。
 
 然而，根据氦原子的谱线强度分析出 $T_{\rm e}$ 和 $N_{\rm e}$ 是以碰撞辐射模型对氦原子激发态数密度的计算为基础的。原子反应速率系数和碰撞辐射模型中包含的能级以及反应过程是影响碰撞辐射模型计算精度的主要因素。
 %现阶段原子反应速率系数（或截面）数据主要有以下三种来源：实验测量
@@ -289,13 +291,6 @@ SUNIST 做为小型球形托卡马克实验装置，研究人员匮乏，所以 
   \label{fig:chap01:research-progress}
 \end{figure}
 
-\begin{figure}%[H]
-  \centering
-  \includegraphics[width=\textwidth]{lineratio-method-rellevelabun.pdf}
-  \caption{各部分研究内容的关系}
-  \label{fig:chap01:research-relationship}
-\end{figure}
-
 本文以氦放电等离子体的原子发射光谱诊断 $T_{\rm e}$ 和 $N_{\rm e}$ 为对象，完成了碰撞辐射模型的建立、实验系统建设、诊断方法的建立和验证等研究内容。图 \ref{fig:chap01:research-progress} 和图 \ref{fig:chap01:research-relationship} 分别显示的是本论文研究过程图和各部分研究内容之间的关系。
 
 论文首先建立适用于 SUNIST 氦放电等离子体的碰撞辐射模型，然后根据模型对谱线比的预测与实验测量进行对比得到等离子体的 $T_{\rm e}$ 和 $N_{\rm e}$ 参数，最后验证该方法的有效性，并针对影响诊断结果的因素进行讨论。
@@ -309,6 +304,13 @@ SUNIST 做为小型球形托卡马克实验装置，研究人员匮乏，所以 
 %论文各部分内容的关系如下（图 \ref{fig:chap01:research-relationship}）：1）在给定的等离子体参数空间内，利用碰撞辐射模型给出的粒子数方程计算出谱线比方法感兴趣能级的数密度；2）将有效自发辐射跃迁速率系数与能级数密度相乘，得到氦原子谱线强度，进而计算出谱线强度比在等离子体参数空间的分布；3）把实验测得的谱线数据与光谱仪响应的标定结果相结合，得到实验测量的谱线强度比；4）将碰撞辐射模型计算与实验测量的谱线强度比进行对比，得到等离子体的具体 $T_{\rm e}$ 与 $N_{\rm e}$ 参数；5）在获得的 $T_{\rm e}$ 与 $N_{\rm e}$ 参数下，可以用碰撞辐射模型计算出所有实验中测量的谱线激发态能级的数密度，将其与实验测量数据计算得到的激发态数密度进行对比，复核碰撞辐射模型对等离子体中的碰撞与辐射过程描述。
 
 通过氦原子谱线辐射诊断 $T_{\rm e}$ 和 $N_{\rm e}$ 的工作，本文建立了从模型建立到实验测量，再到数据分析以及对诊断结果进行评估的整体框架。
+
+\begin{figure}%[H]
+  \centering
+  \includegraphics[width=\textwidth]{lineratio-method-rellevelabun.pdf}
+  \caption{各部分研究内容的关系}
+  \label{fig:chap01:research-relationship}
+\end{figure}
 
 本文结构如下：
 

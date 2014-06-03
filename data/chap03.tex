@@ -23,7 +23,7 @@
   \label{fig:chap03:fujimoto-level-distribution}
 \end{figure}
 
-图 \ref{fig:chap03:fujimoto-level-distribution} 显示的是 T. Fujimoto 的碰撞辐射模型\cite{Fujimoto1979-HeCR} 对一个放电管中氦原子能级数密度分布的计算结果。根据 H. R. Griem 提出的原则\cite{Griem1964-book}，给出了一个临界能级主量子数：
+图 \ref{fig:chap03:fujimoto-level-distribution} 显示的是 T. Fujimoto 的碰撞辐射模型\cite{Fujimoto1979-HeCR} 对一个放电管中氦原子能级数密度分布的计算结果，对于主量子数 $n$ 处于 $3$ 及以下的能级，其粒子数密度与其能量没有明显的关系，对于主量子数大于等于 $4$ 的能级，其能力粒子数密度呈一定的指数关系快速下降。 根据 H. R. Griem 提出的原则\cite{Griem1964-book}，给出了一个临界能级主量子数：
 \begin{equation}\label{eq:chap03:criticalLevel}
     n_c=\left(\frac{8\cdot10^{17}}{N_{\rm e}}\right)^{2/17}
         \left(\frac{kT_{\rm e}}{\chi_H}\right)^{1/17} ，
@@ -54,6 +54,8 @@
 %\subsection{SUNIST 等离子体原子激发和电离过程的选择}
 \subsection{氦原子激发和电离过程的选择}
 
+根据精细平衡原理（the principle of detailed balance）\cite{Lieberman2005-book}，当等离子体内的原子碰撞反应过程处于稳态时，碰撞激发与其逆过程以及碰撞电离与其逆过程等均达到平衡，所以，对于 SUNIST 氦等离子体，下面我们估计各反应过程的重要性、以及对其进行取舍时，仅考虑该过程的正过程，其逆过程的重要性我们则认为与对应的正过程相同。
+
 影响氦原子数密度的首先是碰撞电离过程，可以将氦原子内的电子剥离的反应过程如下\cite{Anderson1999:Thesis}：
 \begin{enumerate}
   \item 电子碰撞电离与双电离\\
@@ -72,9 +74,9 @@
 
 影响氦原子激发态数密度的是碰撞激发、退激发以及自发辐射跃迁过程，其主要反应如下\cite{Anderson1999:Thesis}：
 \begin{enumerate}
-  \item[5.] 电子与离子碰撞激发与退激发\\
-        ${\rm e}+{\rm He}(n\,^{\rm 2S+1}{L}) \leftrightarrow {\rm e}+{\rm He}(n\,^{\rm 2S+1}{L})$\\
-        ${\rm X}^{+z_0} + {\rm He}(n\,^{1}L) \leftrightarrow {\rm X}^{+z_0} + {\rm He}(n\,^{1}L)$
+  \item[5.] 电子与离子碰撞激发\\
+        ${\rm e}+{\rm He}(n\,^{\rm 2S+1}{L}) \to {\rm e}+{\rm He}(n\,^{\rm 2S+1}{L})$\\
+        ${\rm X}^{+z_0} + {\rm He}(n\,^{1}L) \to {\rm X}^{+z_0} + {\rm He}(n\,^{1}L)$
   \item[6.] 自发辐射跃迁\\
         ${\rm He}(n\,^{\rm 2S+1}L) \to  {\rm He}(n\,^{\rm 2S+1}L) + h\nu$
 \end{enumerate}
@@ -100,7 +102,7 @@
 
 图 \ref{fig:chap03:rel-levelabun-compare} 所示为碰撞辐射模型对氦等离子体中 $n\le3$ 各能级粒子和氦离子（${\rm He}^{+}$ 和 ${\rm He}^{2+}$）相对含量随 $T_{\rm e}$ 和 $N_{\rm e}$ 的变化趋势计算结果。可以看出在 SUNIST 等离子体参数范围内，当 $T_{\rm e}=20\,{\rm eV}$ 时，由于电子碰撞激发，普通激发态粒子数密度随 $N_{\rm e}$ 增大而增加，基态和亚稳态由于电子碰撞激发过程的影响，其粒子数密度相对略有下降。在特定的 $N_{\rm e}$ 条件下（$1.0\times10^{12}\,{\rm cm}^{-3}$），随着 $T_{\rm e}$ 的上升，各氦原子能级数密度快速下降。我们将以图 \ref{fig:chap03:rel-levelabun-compare}(a) 所示做氦原子和氦离子的数密度量级估计，SUNIST 氦放电等离子体中，可以认为 $N_{\rm e}$ 与 ${\rm He}^{2+}$ 具有相同量级的数密度。
 
-对于 SUNIST 真空室，连续放电后，质谱测量结果显示等效氢原子数占本底原子数约为 $40\%$，为氦等离子体放电时的主要杂质。本底气压在小于 $1\times10^{-4}\,{\rm Pa}$ 范围内，放电时的气压约为 $4.5\times10^{-3}\,{\rm Pa}$，可见，正常放电时 H 的数密度比 $N_{{\rm He}^{2+}}$ 要小两个数量级，同时，由于其他如 C、N、O 等杂质含量不会高于氢\cite{Isler1984:NF:Impurities}，我们这里将这些杂质粒子的数密度量级设为与 H 相同。
+对于 SUNIST 真空室，长时间的连续氦气放电后，质谱测量结果显示等效氢原子数（包括水、氢气等分子）占本底原子数约为 $40\%$，为氦等离子体放电时的主要杂质。本底气压在小于 $1\times10^{-4}\,{\rm Pa}$ 范围内，放电时的气压约为 $4.5\times10^{-3}\,{\rm Pa}$，可见，正常放电时 H 的数密度比 $N_{{\rm He}^{2+}}$ 要小两个数量级，同时，由于其他如 C、N、O 等杂质含量不会高于氢\cite{Isler1984:NF:Impurities}，我们这里将这些杂质粒子的数密度量级设为与 H 相同。
 
 表 \ref{table:chap03:N-gusuan} 所示为 SUNIST 氦放电等离子体各粒子数密度量级的估算结果，在量级估算时，以基态能级粒子数密度 $N_{\rm gs}$ 为基准。
 
@@ -246,7 +248,7 @@ ${\rm X-}$普通激发态（双电离） & $+4$ & $-4$ & $-3$ & $-3$ & $-6$ \\
 
 \subsection{氦放电等离子体光学厚度的计算}
 
-根据式 (\ref{eq:chap02:mod})，计算了在不同的温度和密度组合下平均光学厚度 $\tau_0$ 的数值，如表 \ref{table:chap03:helines-mod} 所示。因为 SUNIST 等离子体中较低的 $n_i$ 与较高的 $v_{\rm th}$，SUNIST 等离子体对测量谱线的吸收作用可以忽略，计算结果还显示即使对跃迁低能级为基态或亚稳态的共振线，仍可以忽略等离子体的吸收影响。
+根据式 (\ref{eq:chap02:mod})，计算了在不同的温度和密度组合下平均光学厚度 $\tau_0$ 的数值，如表 \ref{table:chap03:helines-mod} 所示。因为 SUNIST 等离子体中较低的 $n_i$ 与较高的 $v_{\rm th}$，SUNIST 等离子体对测量谱线的吸收作用可以忽略，计算结果还显示即使对跃迁低能级为基态或亚稳态的共振线（$501.6\,{\rm nm}$、$396.5\,{\rm nm}$、$504.8\,{\rm nm}$），仍可以忽略等离子体的吸收影响。
 
 \begin{table}%[H]
 \caption{本文测量氦原子谱线的平均光学厚度}
@@ -278,7 +280,7 @@ $2^3{\rm P}\leftarrow5^3{\rm S}$ & 412.1 & 0.001 & 0.002 && 0.000 & 0.001\\
 
 碰撞辐射模型的核心是对模型中包含的粒子列出其数密度反应速率方程，联立这些方程以求得各粒子的数密度。在氦等离子体中，不同的激发态能级具有不尽相同的主要反应过程，例如 ${\rm He}^{2+}$ 粒子不存在双电子复合过程（dielectric recombination）、电子碰撞双电子电离过程只需计入基态粒子等。本文的碰撞辐射模型针对不同的能级也做了相应的处理。
 
-基态氦原子 $1^1{\rm S}$ 的主要损失过程包括电子碰撞激发与电离；主要产生过程包括激发态电子碰撞退激发和自发辐射跃迁以及 ${\rm He}^+$ 离子的辐射复合（radiation recombination）与偶电子复合（dielectric recombination）过程。其粒子数密度 $N_1$ 的速率方程：
+基态氦原子 $1^1{\rm S}$ 的主要损失过程包括电子碰撞激发与电离；主要产生过程包括激发态电子碰撞退激发和自发辐射跃迁以及 ${\rm He}^+$ 离子的辐射复合（radiation recombination）与双电子复合（dielectric recombination）过程。其粒子数密度 $N_1$ 的速率方程：
 \begin{equation}
     \label{eq:crm:gs}
     \begin{aligned}
@@ -289,7 +291,7 @@ $2^3{\rm P}\leftarrow5^3{\rm S}$ & 412.1 & 0.001 & 0.002 && 0.000 & 0.001\\
     \end{aligned}
 \end{equation}
 
-对于亚稳态 $2^1{\rm S}$ 和 $2^3{\rm S}$，忽略其与普通激发态的电子碰撞双电子电离与偶电子复合过程，则对于氦原子的激发态和亚稳态 $p$，主要损失过程为电子碰撞激发与退激发、自发辐射跃迁与电子碰撞电离过程；主要产生过程为：电子碰撞激发与退激发，自发辐射跃迁与 ${\rm He}^+$ 离子辐射复合过程。其粒子数 $N_p$ 的速率方程：
+对于亚稳态 $2^1{\rm S}$ 和 $2^3{\rm S}$，忽略其与普通激发态的电子碰撞双电子电离与双电子复合过程，则对于氦原子的激发态和亚稳态 $p$，主要损失过程为电子碰撞激发与退激发、自发辐射跃迁与电子碰撞电离过程；主要产生过程为：电子碰撞激发与退激发，自发辐射跃迁与 ${\rm He}^+$ 离子辐射复合过程。其粒子数 $N_p$ 的速率方程：
 \begin{equation}
 \label{eq:crm:excstate}
 \begin{aligned}
@@ -300,7 +302,7 @@ $2^3{\rm P}\leftarrow5^3{\rm S}$ & 412.1 & 0.001 & 0.002 && 0.000 & 0.001\\
 \end{aligned}
 \end{equation}
 
-${\rm He}^+$~离子的主要损失过程为电子碰撞电离、辐射复合以及偶电子复合过程；主要产生过程为：原子激发态碰撞电离以及 ${\rm He}^{2+}$ 离子复合过程。其粒子数 $N_{{\rm He}^+}$ 的速率方程为：
+${\rm He}^+$~离子的主要损失过程为电子碰撞电离、辐射复合以及双电子复合过程；主要产生过程为：原子激发态碰撞电离以及 ${\rm He}^{2+}$ 离子复合过程。其粒子数 $N_{{\rm He}^+}$ 的速率方程为：
 \begin{equation}
 \label{eq:crm:HeII}
 \begin{aligned}
@@ -320,7 +322,7 @@ ${\rm He}^+$~离子的主要损失过程为电子碰撞电离、辐射复合以�
 \end{aligned}
 \end{equation}
 
-在速率方程 (\ref{eq:crm:gs}) -- (\ref{eq:crm:HeIII}) 中，$q<p$ 表示 $q$ 能级位于 $p$ 能级之下；$A_{pq}$ 为 $p$ 能级到 $q$ 能级跃迁的爱因斯坦系数；$C_{qp}$ 为电子碰撞跃迁速率系数；$S_{{\rm He}^+}(p)$ 与 $S_{{\rm He}^{2+}}(p)$ 分别为粒子 $p$ 电子碰撞电离至 ${\rm He}^+$ 与 ${\rm He}^{2+}$ 离子的速率系数；$\beta_{{\rm He}^+}(p)$、$\beta_{{\rm He}^{2+}}({\rm He}^+)$ 以及$\beta_{{\rm He}^+,{\rm d}}(1)$ 分别为 ${\rm He}^+$ 离子辐射复合速率系数、${\rm He}^{2+}$ 离子复合至 ${\rm He}^+$ 过程的速率系数以及 ${\rm He}^+$ 离子的偶电子复合至基态速率系数。
+在速率方程 (\ref{eq:crm:gs}) -- (\ref{eq:crm:HeIII}) 中，$q<p$ 表示 $q$ 能级位于 $p$ 能级之下；$A_{pq}$ 为 $p$ 能级到 $q$ 能级跃迁的爱因斯坦系数；$C_{qp}$ 为电子碰撞跃迁速率系数；$S_{{\rm He}^+}(p)$ 与 $S_{{\rm He}^{2+}}(p)$ 分别为粒子 $p$ 电子碰撞电离至 ${\rm He}^+$ 与 ${\rm He}^{2+}$ 离子的速率系数；$\beta_{{\rm He}^+}(p)$、$\beta_{{\rm He}^{2+}}({\rm He}^+)$ 以及$\beta_{{\rm He}^+,{\rm d}}(1)$ 分别为 ${\rm He}^+$ 离子辐射复合速率系数、${\rm He}^{2+}$ 离子复合至 ${\rm He}^+$ 过程的速率系数以及 ${\rm He}^+$ 离子的双电子复合至基态速率系数。
 
 \subsection{氦原子反应过程速率系数的计算}
 
@@ -423,7 +425,7 @@ ${\rm He}^+$~离子的主要损失过程为电子碰撞电离、辐射复合以�
 \end{equation}
 其中，$a$、$b$、$T_0$ 与 $T_1$ 为拟合系数，而 $T$ 为电子温度。
 
-氦离子 ${\rm He}^+$ 的偶电子复合速率系数由以下拟合公式给出\cite{Aldrovandi1973,Shull1982,Arnaud1985}：
+氦离子 ${\rm He}^+$ 的双电子复合速率系数由以下拟合公式给出\cite{Aldrovandi1973,Shull1982,Arnaud1985}：
 \begin{equation}
     \beta_{\rm d}(T)=AT^{-3/2}\exp\left(\frac{-T_0}{T}\right)\left[1+B\exp\left(-\frac{T_1}{T}\right)\right]
 \end{equation}
@@ -449,7 +451,7 @@ ${\rm He}^+$~离子的主要损失过程为电子碰撞电离、辐射复合以�
         $n\leq4$ 激发态 $\to$ ${\rm He}^+$ & $\pm15\%$ \\
         基态 $\to$ ${\rm He}^{2+}$ & $\pm11\%$ \\
         氦离子辐射复合 & $\pm10\%$\\
-        ${\rm He}^+$ 偶电子复合 & $\pm10\%$\\
+        ${\rm He}^+$ 双电子复合 & $\pm10\%$\\
         其他过程 & $\pm50\%$\\
 \bottomrule[1.5pt]
 \end{tabular}
@@ -500,7 +502,7 @@ ${\rm He}^+$~离子的主要损失过程为电子碰撞电离、辐射复合以�
   \label{fig:chap03:ZvsTe}
 \end{figure}
 
-做为对比，图 \ref{fig:chap03:ZvsTe} 给出了在电子密度 $N_{\rm e}=1.0\times10^{12}\,{\rm cm}^{-3}$ 条件下，当达到稳态时, 本文碰撞辐射模型与 FLYCHK\cite{FLYCHK,FLYCHK:url} 代码计算的平均电荷数 $\overline{Z}$ 随 $T_{\rm e}$ 的变化曲线。由图可知，当 $T_{\rm e}>10\,{\rm eV}$ 时，本论文模型与 FLYCHK 的计算结果可以吻合，等离子体中的氦原子已经几乎达到完全电离的状态。两模型的计算结果在 $T_{\rm e}=2\,{\rm eV}-10\,{\rm eV}$ 范围内有最大约 $30\%$ 的误差，这主要是因为两者使用的电子碰撞截面不同造成的。当 $T_{\rm e}$ 在跃迁能量附近时，碰撞反应截面具有比较复杂的行为，无论理论计算还是实验测量都难以获得满意的结果 \cite{Ralchenko2008603}，本论文模型计算结果在 $T_{\rm e}=2.5\,{\rm eV}-6\,{\rm eV}$ 的阶梯也可能是由所使用的碰撞截面拟合公式较差的精度造成的。
+做为对比，图 \ref{fig:chap03:ZvsTe} 给出了在电子密度 $N_{\rm e}=1.0\times10^{12}\,{\rm cm}^{-3}$ 条件下，当达到稳态时, 本文碰撞辐射模型与 FLYCHK\cite{FLYCHK,FLYCHK:url} 代码计算的平均电荷数 $\overline{Z}$ 随 $T_{\rm e}$ 的变化曲线。由图可知，当 $T_{\rm e}>10\,{\rm eV}$ 时，本论文模型与 FLYCHK 的计算结果可以吻合，等离子体中的氦原子已经几乎达到完全电离的状态。两模型的计算结果在 $T_{\rm e}=2\,{\rm eV}-10\,{\rm eV}$ 范围内有最大约 $30\%$ 的误差，这主要是因为两者使用的电子碰撞截面不同造成的。当 $T_{\rm e}$ 在跃迁能量附近时，碰撞反应截面具有比较复杂的行为，无论理论计算还是实验测量都难以获得满意的结果 \cite{Ralchenko2008603}，本论文模型计算结果在 $T_{\rm e}=2.5\,{\rm eV}-6\,{\rm eV}$ 的阶梯也可能是由所使用的碰撞截面拟合公式较差的精度造成的，要给出更合理的解释，仍需进一步进行对比研究。
 
 %\section{SUNIST 氦原子碰撞辐射模型研究}
 \section{氦原子碰撞辐射模型的研究}
@@ -540,7 +542,7 @@ ${\rm He}^+$~离子的主要损失过程为电子碰撞电离、辐射复合以�
     \includegraphics[width=0.8\textwidth]{Ne1E12_Te30_1e7cm-3s-1.pdf}
     \caption{根据碰撞辐射模型结果，
     %不同 $T_{\rm e}$ 和 $N_{\rm e}$ 参数下，
-    各能级的主要产生（占比大于该能级总产生速率的 $10\%$）过程。%其中，主量子数 $n\geq 5$ 的能级合并为一个高能级 $hl$。
+    各能级的主要产生（占比大于该能级总产生速率的 $10\%$）过程的粒子流，单位：${\rm cm}^{-3}{\rm s}^{-1}$。% 其中，主量子数 $n\geq 5$ 的能级合并为一个高能级 $hl$。
     其中，虚线箭头为自发辐射跃迁过程，实线箭头为碰撞跃迁过程。}%
     \label{fig:chap03:main-inflow}
 \end{figure}
@@ -598,7 +600,7 @@ N_{\rm e}\sum_{i\ne p}C_{ip}N_i=N_{\rm e}N_p\sum_{i\ne p}C_{pi}+N_p\sum_{i<p}A_{
 N_p=\frac{N_{\rm e}\sum_{i\ne p}C_{ip}N_i}{N_{\rm e}\sum_{i\ne p}C_{pi}+\sum_{i<p}A_{pi}}
 \label{eq:appendix:error:Np}
 \end{equation}
-这里，对于速率系数不确定性引起的 $N_p$ 相对误差，我们计入最大估计值\cite{YuChangxuan:book}：
+这里，对于速率系数不确定性引起的 $N_p$ 的相对误差或不确定性 $s_{N_p}$，我们计入最大估计值\cite{YuChangxuan:book}：
 \begin{eqnarray}
 s_{N_p}=\frac{{\rm d}N_p}{N_p}& = &s\left(N_{\rm e}\sum_{i\ne p}C_{ip}N_i\right) + s\left(N_{\rm e}\sum_{i\ne p}C_{pi}+\sum_{i<p}A_{pi}\right)% \nonumber \\
 % & = & \frac{}{} + \frac{}{}
@@ -658,13 +660,13 @@ s(N_j)\simeq 2\left(\frac{{\rm d}f_{jp}}{F_{j,{\rm in}}}\right)
 s_{N_p}=E_{jp}s(C_{jp})=2\left(1-\frac{2}{F_{j,{\rm in}}}\right)^{-1}\frac{f_{jp}}{F_{p,{\rm in}}}s(C_{jp})
 \label{eq:appendix:error:Propagation}
 \end{eqnarray}
-其中
+其中，本文将
 \begin{eqnarray}
 E_{jp}=2\left(1-\frac{2}{F_{j,{\rm in}}}\right)^{-1}\frac{f_{jp}}{F_{p,{\rm in}}}
 \simeq 2\frac{f_{jp}}{F_{p,{\rm in}}}
 \label{eq:appendix:error:PropagationCoeff}
 \end{eqnarray}
-为\emph{速率系数不确定性传递函数}（the uncertainty propagation coefficient），$F_{j,{\rm in}}$、$f_{jp}$ 与 $F_{p,{\rm in}}$ 可以从碰撞辐射模型的计算结果直接计算获得。在式(\ref{eq:appendix:error:PropagationCoeff}) 中假设
+定义为\emph{速率系数不确定性传递函数}（the uncertainty propagation coefficient），$F_{j,{\rm in}}$、$f_{jp}$ 与 $F_{p,{\rm in}}$ 可以从碰撞辐射模型的计算结果直接计算获得。在式(\ref{eq:appendix:error:PropagationCoeff}) 中假设
 \begin{eqnarray}
 F_{j,{\rm in}}\gg 2
 \label{eq:appendix:error:FjinLargerThan2}
@@ -828,14 +830,16 @@ r^{\rm mod} \approx\pm r^{\rm mod} \times \sqrt{2\left(\frac{\delta_n}{n}\right)
 
 SUNIST 等离子体对 $501.6\,{\rm nm}\,(3^1{\rm P}-2^1{\rm S})$、$396.5\,{\rm nm}\,(4^1{\rm P}-2^1{\rm S})$ 与 $388.9\,{\rm nm}\,(3^3{\rm P}-2^3{\rm S})$ 具有明显的再吸收作用（第 \ref{sec:chap04:lineratio-ne-te} 节），则这三条谱线也不适合用来进行谱线的辐射诊断，而谱线 $412.1\,{\rm nm}\,(5^3{\rm S}-2^3{\rm P})$ 来自 $n=5$ 壳层，其强度相对 $n=3$ 和 $n=4$ 壳层的谱线要弱。所以，本文在 $504.8\,{\rm nm}\,(4^1{\rm S}-2^1{\rm P})$、$492.2\,{\rm nm}\,(4^1{\rm D}-2^1{\rm P})$、$587.6\,{\rm nm}\,(3^3{\rm D}-2^3{\rm P})$、$471.3\,{\rm nm}\,(4^3{\rm S}-2^3{\rm P})$ 和 $447.1\,{\rm nm}\,(4^3{\rm D}-2^3{\rm P})$ 五条谱线中挑取分别来自不同自旋系统的三条谱线，建立同时进行 $T_{\rm e}$ 和 $N_{\rm e}$ 诊断的谱线比法。
 
-\begin{figure}
+图 \ref{fig:chap03:getTeNe-lineratio} 与 图 \ref{fig:chap03:lineratio-backup} 分别显示本文所使用的谱线比计算结果与可以用来进行谱线比诊断的备选谱线比方案。其中，图 \ref{fig:chap03:lineratio-backup:1} 所显示的谱线比中，$T_{\rm e}$ 敏感谱线比 $r_{12}=I_{587.6}/I_{504.8}$ 在 $N_{\rm e}<5\times10^{12}\,{\rm cm}^{-3}$ 时，显示出与 $N_{\rm e}$ 较强的函数关系，同时此谱线比分别来自 $n=3$ 和 $n=4$ 的两激发态能级粒子，其强度差距悬殊，不利于谱线比法的应用。图 \ref{fig:chap03:lineratio-backup:2} 的备选方案中，$N_{\rm e}$ 敏感谱线比 $r_{13}=I_{447.1}/I_{471.3}$ 在低温高密度（$T_{\rm e}<100\,{\rm eV}$，$N_{\rm e}>5\times10^{12}\,{\rm cm}^{-3}$）区，对电子温度的诊断会出现重复取值的问题。图 \ref{fig:chap03:getTeNe-lineratio} 显示的谱线比方案，谱线强度之间的比值范围合适，且电子温度和密度敏感的谱线比也显示出了优越的独立于另外一个参数的性质。
+
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.6\textwidth]{1-9to7-7to5-getTeNe-lineratio.pdf}
   \caption{SUNIST 上使用的来自 $n=4$ 激发态能级的三条谱线的谱线比。图片来自 \onlinecite{xie:wlxb}。}
   \label{fig:chap03:getTeNe-lineratio}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \begin{subfigure}{0.45\textwidth}
     \includegraphics[width=\textwidth]{1-4to5-7to5-getTeNe-lineratio.pdf}
@@ -852,14 +856,13 @@ SUNIST 等离子体对 $501.6\,{\rm nm}\,(3^1{\rm P}-2^1{\rm S})$、$396.5\,{\rm
   \label{fig:chap03:lineratio-backup}
 \end{figure}
 
-图 \ref{fig:chap03:getTeNe-lineratio} 与 图 \ref{fig:chap03:lineratio-backup} 分别显示本文所使用的谱线比计算结果与可以用来进行谱线比诊断的备选谱线比方案。其中，图 \ref{fig:chap03:lineratio-backup:1} 所显示的谱线比中，$T_{\rm e}$ 敏感谱线比 $r_{12}=I_{587.6}/I_{504.8}$ 在 $N_{\rm e}<5\times10^{12}\,{\rm cm}^{-3}$ 时，显示出与 $N_{\rm e}$ 较强的函数关系，同时此谱线比分别来自 $n=3$ 和 $n=4$ 的两激发态能级粒子，其强度差距悬殊，不利于谱线比法的应用。图 \ref{fig:chap03:lineratio-backup:2} 的备选方案中，$N_{\rm e}$ 敏感谱线比 $r_{13}=I_{447.1}/I_{471.3}$ 在低温高密度（$T_{\rm e}<100\,{\rm eV}$，$N_{\rm e}>5\times10^{12}\,{\rm cm}^{-3}$）区，对电子温度的诊断会出现重复取值的问题。图 \ref{fig:chap03:getTeNe-lineratio} 显示的谱线比方案，谱线强度之间的比值范围合适，且电子温度和密度敏感的谱线比也显示出了优越的独立于另外一个参数的性质。
 
 \subsection{谱线比法确定等离子体参数的过程}
 
 \begin{figure}
   \centering
   \includegraphics[width=0.6\textwidth]{5-9to7-7to5-getTeNe-crosspoint.pdf}
-  \caption{谱线比法确定 $T_{\rm e}$ 和 $N_{\rm e}$ 参数}
+  \caption{谱线比法确定 $T_{\rm e}$ 和 $N_{\rm e}$ 参数，曲线交点以圆圈标识。}
   \label{fig:chap03:getTeNe-cross-pnt}
 \end{figure}
 
