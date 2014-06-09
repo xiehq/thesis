@@ -23,12 +23,14 @@
   \label{fig:chap03:fujimoto-level-distribution}
 \end{figure}
 
-图 \ref{fig:chap03:fujimoto-level-distribution} 显示的是 T. Fujimoto 的碰撞辐射模型\cite{Fujimoto1979-HeCR} 对一个放电管中氦原子能级数密度分布的计算结果，对于主量子数 $n$ 处于 $3$ 及以下的能级，其粒子数密度与其能量没有明显的关系，对于主量子数大于等于 $4$ 的能级，其能力粒子数密度呈一定的指数关系快速下降。 根据 H. R. Griem 提出的原则\cite{Griem1964-book}，给出了一个临界能级主量子数：
+图 \ref{fig:chap03:fujimoto-level-distribution} 显示的是 T. Fujimoto 的碰撞辐射模型\cite{Fujimoto1979-HeCR} 对一个放电管中氦原子能级数密度分布的计算结果，对于主量子数 $n$ 处于 $3$ 及以下的能级，其粒子数密度与其能量没有明显的关系，对于主量子数大于等于 $4$ 的能级，其能级粒子数密度呈一定的指数关系快速下降。 根据 H. R. Griem 提出的原则\cite{Griem1964-book}，给出了一个临界能级主量子数：
 \begin{equation}\label{eq:chap03:criticalLevel}
     n_c=\left(\frac{8\cdot10^{17}}{N_{\rm e}}\right)^{2/17}
         \left(\frac{kT_{\rm e}}{\chi_H}\right)^{1/17} ，
 \end{equation}
-其中，$\chi_H$ 为氢的基态电离能，$k$ 为玻尔兹曼常数。主量子数处于 $n_c$ 以下的能级粒子数密度与能级的能量之间无明显的函数关系（除基态与亚稳态外 $N_p/g_p\propto n^{-0.5}$，其中，$N_p$ 与$g_p$ 分别为 $p$ 激发态的数密度和统计权重因子，$n$ 为 $p$ 激发态能级的主量子数），其能级粒子数由激发态粒子之间电子碰撞跃迁与自发辐射过程共同决定，称为日冕区~(corona phase)能级。主量子数处于 $n_c$ 以上能级的粒子数密度随能级的升高而快速下降（$N_p/g_p\propto n^{-6}$），其粒子之间的电子碰撞跃迁过程大于自发辐射过程，称为准饱和区（quasi-saturation phase）能级。对于SUNIST 等离子体，在高密度低温等离子体条件下 $n_c=4$；在低密度高温等离子体条件下 $n_c=6$。基于此结论，本文的 CR 模型包含主量子数 $n\le 7$ 的所有激发态能级（第 \ref{sec:chap03:maxn-in-crm} 节将给出更多的讨论）以及氦的两个离子 ${\rm He}^+$ 与${\rm He}^{2+}$，将轨道角动量 $l\ge 3$ 的能级合并成为一个能级，记为 ${\rm F}^+$ 能级。
+其中，$\chi_H$ 为氢的基态电离能，$k$ 为玻尔兹曼常数。主量子数处于 $n_c$ 以下的能级粒子数密度与能级的能量之间无明显的函数关系（除基态与亚稳态外 $N_p/g_p\propto n^{-0.5}$，其中，$N_p$ 与$g_p$ 分别为 $p$ 激发态的数密度和统计权重因子，$n$ 为 $p$ 激发态能级的主量子数），其能级粒子数由激发态粒子之间电子碰撞跃迁与自发辐射过程共同决定，称为日冕区~(corona phase)能级。主量子数处于 $n_c$ 以上能级的粒子数密度随能级的升高而快速下降（$N_p/g_p\propto n^{-6}$），其粒子之间的电子碰撞跃迁过程大于自发辐射过程，称为准饱和区（quasi-saturation phase）能级。
+
+对于SUNIST 等离子体，在高密度低温等离子体条件下 $n_c=4$；在低密度高温等离子体条件下 $n_c=6$。基于此结论，本文的 CR 模型包含主量子数 $n\le 7$ 的所有激发态能级（第 \ref{sec:chap03:maxn-in-crm} 节将给出更多的讨论）以及氦的两个离子 ${\rm He}^+$ 与${\rm He}^{2+}$，将轨道角动量 $l\ge 3$ 的能级合并成为一个能级，记为 ${\rm F}^+$ 能级。
 图 \ref{fig:chap03:he-level-diagram} 所示为本文模型的氦原子能级图。
 
 \begin{figure}
@@ -72,7 +74,7 @@
 \end{enumerate}
 其中，${\rm X}$ 表示某杂质原子或离子。
 
-影响氦原子激发态数密度的是碰撞激发、退激发以及自发辐射跃迁过程，其主要反应如下\cite{Anderson1999:Thesis}：
+影响氦原子激发态数密度的是碰撞激发以及自发辐射跃迁过程，其主要反应如下\cite{Anderson1999:Thesis}：
 \begin{enumerate}
   \item[5.] 电子与离子碰撞激发\\
         ${\rm e}+{\rm He}(n\,^{\rm 2S+1}{L}) \to {\rm e}+{\rm He}(n\,^{\rm 2S+1}{L})$\\
@@ -127,7 +129,7 @@
 
 2）碰撞速度的量级
 
-对于 SUNIST 等离子体，电子与离子的热平衡弛豫时间常数为 $\tau_{\rm i-e}\sim2\,{\rm ms}$ （第 \ref{sec:chap03:quasi-stationary} 节），与 SUNIST 放电平顶段持续时间相同，可以认为离子温度是远小于电子温度的，则电子与重粒子的碰撞速度应有三个量级的差别。重粒子主要为 H、He、C、N 和 O 等轻元素，不妨认为他们具有相同量级的碰撞速度。以电子碰撞速度 $v_{\rm e}$ 为基准，表 \ref{table:chap03:v-gusuan} 所示为碰撞速度的量级结果。
+对于 SUNIST 等离子体，电子与离子的热平衡弛豫时间常数为 $\tau_{\rm i-e}\sim2\,{\rm ms}$ （第 \ref{sec:chap03:quasi-stationary} 节），与 SUNIST 放电平顶段持续时间相同，可以认为离子温度是远小于电子温度的，则电子与重粒子的碰撞速度应有三个量级的差别。重粒子主要为 H、He、C、N 和 O 等轻元素，不妨认为它们具有相同量级的碰撞速度。以电子碰撞速度 $v_{\rm e}$ 为基准，表 \ref{table:chap03:v-gusuan} 所示为碰撞速度的量级结果。
 
 \begin{table}%[H]
 \caption{各粒子碰撞速度的量级}
@@ -870,23 +872,23 @@ SUNIST 等离子体对 $501.6\,{\rm nm}\,(3^1{\rm P}-2^1{\rm S})$、$396.5\,{\rm
 
 1）寻点
 
-在 $T_{\rm e}$、$N_{\rm e}$ 二维空间上的 $r_{12}(T_{\rm e},N_{\rm e})$ 与 $r_{23}(T_{\rm e},N_{\rm e})$ 计算值内，分别寻找 $r_{12}=5.5$ 和 $r_{23}=11.5$ 的 $(T_{\rm e}, N_{\rm e})$ 点，如图 \ref{fig:chap03:getTeNe-cross-pnt} 所示。
+在 $T_{\rm e}$、$N_{\rm e}$ 二维空间上的 $r_{12}(T_{\rm e},N_{\rm e})$ 与 $r_{23}(T_{\rm e},N_{\rm e})$ 计算值内，分别寻找 $r_{12}=5.5$ 和 $r_{23}=11.5$ 的 $(T_{\rm e}, N_{\rm e})$ 数据点，如图 \ref{fig:chap03:getTeNe-cross-pnt} 所示。
 
 2）拟合
 
 对于 $T_{\rm e}$ 敏感谱线比，将寻找到的一系列 $(T_{\rm e}, N_{\rm e})$ 寻点取值结果用下面的多项式进行拟合：
 \begin{equation}
     \label{eq:chap03:getTeNe:r12-fit}
-    T_{\rm e} = \sum_{i=0}^{3}C_{i}N_{\rm e}^{i}
+    T_{\rm e} = \sum_{m=0}^{3}C_{m}N_{\rm e}^{m}
 \end{equation}
-得到 $C_i$ 系数。
+得到 $C_m$ 系数。
 
 对于 $N_{\rm e}$ 敏感谱线比，则将 $(T_{\rm e}, N_{\rm e})$ 取值系里用下面的多项式拟合：
 \begin{equation}
     \label{eq:chap03:getTeNe:r32-fit}
-    N_{\rm e} = \sum_{j=0}^{3}C_{j}T_{\rm e}^{j}
+    N_{\rm e} = \sum_{n=0}^{3}C_{n}T_{\rm e}^{n}
 \end{equation}
-得到 $C_j$ 系数。多项式曲线拟合结果在图 \ref{fig:chap03:getTeNe-cross-pnt} 中给出。
+得到 $C_n$ 系数。多项式曲线拟合结果在图 \ref{fig:chap03:getTeNe-cross-pnt} 中给出。
 
 3）求交点
 
